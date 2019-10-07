@@ -22,7 +22,7 @@
   Hot Dogs Qty.<input type="text" placeholder="0" name="hotdogs" id="hotdogs"> <br>
 
   <input type="checkbox" name="fries"> 
-  French FriesQty. <input type="text" placeholder="0" name="fries" id="fries"> <br>
+  French Fries Qty.<input type="text" placeholder="0" name="fries" id="fries"> <br>
   
   <input type="checkbox" name="drinks"> 
   Drinks Qty.<input type="text" placeholder="0" name="drinks" id="drinks"> <br>
@@ -32,6 +32,7 @@
 
     <script language"javascript">
     function GetIn() {
+      window.Price = 0;
       window.hprice = (document.getElementById("hotdogs").value * 3.25);
       document.write("$" + window.hprice + "<br>");
   
@@ -40,10 +41,10 @@
       
       window.dprice = (document.getElementById("drinks").value * 1.50);
       document.write("$" + window.dprice + "<br>");
+      
+      document.write("OOF: " + window.Price);
     }
   </script>
-<script language="javascript">
 
-</script>  
 </body>
 </html>
