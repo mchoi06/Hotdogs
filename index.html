@@ -32,10 +32,17 @@
 
     <script language"javascript">
     function GetIn() {
-      window.hotdogs = document.getElementById("hotdogs").value;
-      window.fries = document.getElementById("fries").value;
+      window.hprice = document.getElementById("hotdogs").value;
+      document.write("$" + window.hprice + "<br>");
+
+      window.fprice = document.getElementById("fries").value;
+      document.write("$" + window.fprice + "<br>");
+
       window.drinks = document.getElementById("drinks").value;
-      document.write("hdog: " + window.hdog + "<br> fries: " + window.fries); 
+      document.dprice("$" + window.dprice + "<br>");
+        
+      
+      document.write("hdog: " + window.hotdogs + "<br> fries: " + window.fries); 
     }
       /*
       window.Price = 0;
