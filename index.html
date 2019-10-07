@@ -19,24 +19,23 @@
   <h2> Place Your Order </h2> 
   
   <input type="checkbox" name="hotdogs"> 
-  Hot Dogs Qty.<input type="text" placeholder="0" name="hotdogs" id="hotdogs"> <br>
+  Hot Dogs Qty.<input type="text" placeholder="0" name="hotdogs" id="hotdogs" value="0"> <br>
 
   <input type="checkbox" name="fries"> 
-  French Fries Qty.<input type="text" placeholder="0" name="fries" id="fries"> <br>
+  French Fries Qty.<input type="text" placeholder="0" name="fries" id="fries" value="0"> <br>
   
   <input type="checkbox" name="drinks"> 
-  Drinks Qty.<input type="text" placeholder="0" name="drinks" id="drinks"> <br>
+  Drinks Qty.<input type="text" placeholder="0" name="drinks" id="drinks" value="0"> <br>
   
   <button type="button" onclick="GetIn()"> Order </button>
 </form>
 
     <script language"javascript">
     function GetIn() {
-      window.Price = 0;
+      var window.Price = 0;
       window.hprice = (document.getElementById("hotdogs").value * 3.25);
       document.write("$" + window.hprice + "<br>");
       document.write(window.hprice);
-      document.write(document.getElementById("fries").value);
       
       window.fprice = (document.getElementById("fries").value * 2);
       document.write("$" + window.fprice + "<br>");
