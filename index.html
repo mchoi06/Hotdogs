@@ -11,7 +11,12 @@
 </style>
 </head>
 <body>
-
+  
+  <script language"javascript">
+    function GetIn() {
+      window.hprice = document.getElementById("hotdogs".value * 3.25);
+    document.write("$" + window.hprice);
+  </script>
 <h1> Joe's Hotdog Stand </h1>  
 
 <!-- Form -->
@@ -22,12 +27,9 @@
   Hot Dogs <input type="text" placeholder="Qty" name="hotdogs" id="hotdogs"> <br>
   <input type="checkbox" name="hotdogs"> French Fries <input type="text" placeholder="Qty" name="fries" id="fries">
   Price: 
-  <script language"javascript">
-    document.write("$" + document.getElementById("hotdogs").value * 3.25);
-  </script>
   
   <input type="checkbox" name="hotdogs"> Drinks <input type="text" placeholder="Qty" name="drinks" id="drinks"> <br>
-  <button type="button" onclick=""> Order </button>
+  <button type="button" onclick="GetIn()"> Order </button>
 </form>
 
 <script language="javascript">
