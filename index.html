@@ -1,17 +1,41 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<style>
-  h1 {
-    text-align: center;
-  }
-  h2 {
-    text-align: center;
-  }  
-</style>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<style>
+  
+  h1,h2 {
+  text-align: center
+  }
+  
+  form {
+    display: block;
+    border: 1px solid #000;
+    width: 25%;
+    padding: 1em;
+    padding-top: .5em;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  
+  button {
+    margin-top: 1em;
+    background-color: #66ff33;
+  }
+  
+  table {
+    display: block;
+    border: 1px solid #000;
+    width: 50%;
+    padding: 1em;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+    
+  
+</style>
 </head>
 <body>
   
@@ -25,13 +49,8 @@
   for (var i in prices){
     document.write(i + " Qty. <br> <input type='text' placeholder='0' id='" + i + "'> <br>");
   }  
-  document.write("<button type='button' onclick='LinkSheet();GetIn();Calc();'> Order </button>");
+  document.write("<button type='button' onclick='GetIn();Calc();'> Order </button>");
   document.write("</form>");
-  
-  //Link CSS Stylesheet
-  function LinkSheet() {
-    document.write("<link rel='stylesheet' type='text/css' href='stylesheet.css'>");
-  }
   //Take in Input
   function GetIn() {
     window.quantity = {Hotdogs: document.getElementById("Hotdogs").value,
