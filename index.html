@@ -22,7 +22,7 @@
   {
     document.write(i + " Qty. <input type='text' placeholder='0' id='" + i + "'> <br>");
   }  
-  document.write("<button type='button' onclick='GetIn()'> Order </button>");
+  document.write("<button type='button' onclick='GetIn();Calc();'> Order </button>");
   document.write("</form>");
 </script>
 <!--  
@@ -49,6 +49,10 @@
                     Drinks: document.getElementById("Drinks").value};
     document.write(quantity.Hotdogs + quantity.Fries + quantity.Drinks);
   }
+  
+  function Calc() {
+    var subtotal = 0;
+    alert("Hotdogs Qty. = " + quantity.Hotdogs);
     /*
     window.hprice = document.getElementById("Hotdogs").value;
     window.fprice = document.getElementById("Fries").value;
