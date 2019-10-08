@@ -15,7 +15,7 @@
 <h1> Joe's Hotdog Stand </h1>  
 
 <script language="javascript">
-  var prices = {Hotdogs: 3.25, Fries: 2, Drinks:1.5}; 
+  prices = {Hotdogs: 3.25, Fries: 2, Drinks:1.5}; 
   var i;
   document.write("<form method='get' name='Order'> <h2> Place Your Order </h2>");
   for (var i in prices)
@@ -52,7 +52,8 @@
   
   function Calc() {
     var subtotal = 0;
-    alert("Hotdogs Qty. = " + window.quantity.Hotdogs);
+    alert("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = " + window.prices.Hotdogs + " each, --> "
+          (window.quantity.Hotdogs * window.prices.Hotdogs);
   }
     /*
     window.hprice = document.getElementById("Hotdogs").value;
