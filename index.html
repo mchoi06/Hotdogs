@@ -32,7 +32,7 @@
   }
   
   function Calc() {
-    document.write("Hotdogs Qty. = " + window.quantity.Hotdogs.toFixed(2) + ", Price = " + window.prices.Hotdogs + 
+    document.write("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = " + window.prices.Hotdogs + 
                    " each, Hotdogs Total = " + (window.quantity.Hotdogs * window.prices.Hotdogs) + "<br>");
     document.write("Fries Qty. = " + window.quantity.Fries + ", Price = " + window.prices.Fries + 
                    " each, Fries Total = " + (window.quantity.Fries * window.prices.Fries) + "<br>");
@@ -43,6 +43,7 @@
                       parseFloat(window.quantity.Drinks * window.prices.Drinks);
     document.write("Subtotal = " + window.subtotal);
     window.total = window.subtotal * 1.0625;
+    window.total = windw.total.toFixed(2);
     document.write(window.total);
   }
   
