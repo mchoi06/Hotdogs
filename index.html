@@ -20,7 +20,7 @@
   
   button {
     background-color: #66ff33;
-text-align: right;  }
+  }
   
   table {
     display: block;
@@ -46,7 +46,7 @@ text-align: right;  }
   var i;
   //Write Form
   for (var i in prices){
-    document.write(i + " Qty. <input type='text' placeholder='0' id='" + i + "'> <br>");
+    document.write(i + " Qty. <br> <input type='text' placeholder='0' id='" + i + "'> <br>");
   }  
   document.write("<button type='button' onclick='GetIn();Calc();'> Order </button>");
   document.write("</form>");
