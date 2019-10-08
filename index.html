@@ -24,25 +24,7 @@
   }  
   document.write("<button type='button' onclick='GetIn();Calc();'> Order </button>");
   document.write("</form>");
-</script>
-<!--  
-<br><br><br><br><br><br><br><br><br>
-<form method="get" name="Order">
-  <h2> Place Your Order </h2> 
-  
-  <input type="checkbox" name="hotdogs"> 
-  Hot Dogs Qty.<input type="text" placeholder="0" name="hotdogs" id="hotdogs"> <br>
 
-  <input type="checkbox" name="fries"> 
-  French Fries Qty.<input type="text" placeholder="0" name="fries" id="fries"> <br>
-  
-  <input type="checkbox" name="drinks"> 
-  Drinks Qty.<input type="text" placeholder="0" name="drinks" id="drinks"> <br>
-  
-  <button type="button" onclick="GetIn()"> Order </button>
-</form>
--->
-<script language"javascript">    
   function GetIn() {
     window.quantity = {Hotdogs: document.getElementById("Hotdogs").value,
                        Fries: document.getElementById("Fries").value,
@@ -50,39 +32,17 @@
   }
   
   function Calc() {
-    var subtotal = 0;
     document.write("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = " + window.prices.Hotdogs + 
                    " each, Hotdogs Total = " + (window.quantity.Hotdogs * window.prices.Hotdogs) + "<br>");
     document.write("Fries Qty. = " + window.quantity.Fries + ", Price = " + window.prices.Fries + 
                    " each, Fries Total = " + (window.quantity.Fries * window.prices.Fries) + "<br>");
     document.write("Drinks Qty. = " + window.quantity.Drinks + ", Price = " + window.prices.Drinks + 
                    " each, Drinks Total = " + (window.quantity.Drinks * window.prices.Drinks) + "<br>");
+    window.subtotal += (window.quantity.Hotdogs * window.prices.Hotdogs) + (window.quantity.Fries * window.prices.Fries) +
+               (window.quantity.Drinks * window.prices.Drinks);
+    document.write(window.subtotal);
   }
-    /*
-    window.hprice = document.getElementById("Hotdogs").value;
-    window.fprice = document.getElementById("Fries").value;
-    window.dprice = document.getElementById("Drinks").value;
-    document.write("hdog: " + (window.hprice * 3.25) + 
-                   "<br> fries: " + (window.fprice * 2) + 
-                   "<br> drinks: " + (window.dprice * 1.5)); 
-  } */
-      /*
-      window.Price = 0;
 
-      window.fprice = (document.getElementById("fries").value * 2);
-      document.write("$" + window.fprice + "<br>");
-
-      window.hprice = (document.getElementById("hotdogs").value * 3.25);
-      document.write("$" + window.hprice + "<br>");
-      
-      window.fprice = (document.getElementById("fries").value * 2);
-      document.write("$" + window.fprice + "<br>");
-      
-      window.dprice = (document.getElementById("drinks").value * 1.50);
-      document.write("$" + window.dprice + "<br>");
-      
-      document.write("OOF: " + window.Price);
-    }*/
   </script>
 
 </body>
