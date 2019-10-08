@@ -44,15 +44,15 @@
 -->
 <script language"javascript">    
   function GetIn() {
-    var quantity = {Hotdogs: document.getElementById("Hotdogs").value,
+    var window.quantity = {Hotdogs: document.getElementById("Hotdogs").value,
                     Fries: document.getElementById("Fries").value,
                     Drinks: document.getElementById("Drinks").value};
-    document.write(quantity.Hotdogs + quantity.Fries + quantity.Drinks);
+    document.write(window.quantity.Hotdogs + window.quantity.Fries + window.quantity.Drinks);
   }
   
   function Calc() {
     var subtotal = 0;
-    alert("Hotdogs Qty. = " + quantity.Hotdogs);
+    alert("Hotdogs Qty. = " + window.quantity.Hotdogs);
   }
     /*
     window.hprice = document.getElementById("Hotdogs").value;
