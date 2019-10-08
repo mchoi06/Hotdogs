@@ -9,8 +9,19 @@
   }
   
   form {
-    display: block
+    display: block;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
   }
+  
+  table {
+    display: block;
+    border: 1px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
   
 </style>
 </head>
@@ -38,9 +49,9 @@
   
   //Calculate Prices
   function Calc() {
-    document.write("<table style='width:65%'> <tr> <th> Item </th> <th> Quantity </th> <th> Price </th> <th> Total </th> </tr>");
-    dpcument.write("<tr> <td> Hotdogs </td> <td>" + window.quantity.Hotdogs + "</td> <td> $" + window.prices.Hotdogs.toFixed(2) +
-                   "</td> <td> " + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "</td> </tr>");
+    document.write("<table> <tr> <th> Item </th> <th> Quantity </th> <th> Price </th> <th> Total </th> </tr>");
+    dpcument.write("<tr> <td> Hotdogs </td> <td>" + window.quantity.Hotdogs + "</td> <td> $" + window.prices.Hotdogs.toFixed(2)
+                   + "</td> <td> " + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "</td> </tr>");
     document.write("</table>");
     document.write("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = $" + window.prices.Hotdogs.toFixed(2) + 
                    " each, Hotdogs Total = $" + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "<br>");
