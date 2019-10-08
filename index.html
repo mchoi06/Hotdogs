@@ -38,8 +38,8 @@
                    " each, Fries Total = " + (window.quantity.Fries * window.prices.Fries) + "<br>");
     document.write("Drinks Qty. = " + window.quantity.Drinks + ", Price = " + window.prices.Drinks + 
                    " each, Drinks Total = " + (window.quantity.Drinks * window.prices.Drinks) + "<br>");
-    window.subtotal += (window.quantity.Hotdogs * window.prices.Hotdogs) + (window.quantity.Fries * window.prices.Fries) +
-               (window.quantity.Drinks * window.prices.Drinks);
+    window.subtotal += parseFloat((window.quantity.Hotdogs * window.prices.Hotdogs) + (window.quantity.Fries * window.prices.Fries) +
+               (window.quantity.Drinks * window.prices.Drinks));
     document.write(window.subtotal);
   }
 
