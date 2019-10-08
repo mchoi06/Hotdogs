@@ -16,8 +16,13 @@
   for (var i in prices){
     document.write(i + " Qty. <br> <input type='text' placeholder='0' id='" + i + "'> <br>");
   }  
-  document.write("<button type='button' onclick='GetIn();Calc();'> Order </button>");
+  document.write("<button type='button' onclick='LinkSheet();GetIn();Calc();'> Order </button>");
   document.write("</form>");
+  
+  //Link CSS Stylesheet
+  function LinkSheet() {
+    document.write("<link rel='stylesheet' type='text/css' href='stylesheet.css'>");
+  }
 
   //Take in Input
   function GetIn() {
