@@ -65,13 +65,13 @@
       document.write("New Subtotal = $" + window.discounted.toFixed(2) + "<br>");
       window.total = window.discounted * 1.0625;
       document.write("Tax = $" + (window.total - window.discounted).toFixed(2) + "<br>");
-      document.write("Total = $" + window.total.toFixed(2)); 
+      document.write("<div> Total = $" + window.total.toFixed(2) + "</div>"); 
     } 
     //No Discount
     else {
       window.total = window.subtotal * 1.0625;
       document.write("Tax = $" + (window.total - window.subtotal).toFixed(2) + "<br>");
-      document.write("Total = $" + window.total.toFixed(2));
+      document.write("<div> Total = $" + window.total.toFixed(2) + "</div>");
     }
   }
   
