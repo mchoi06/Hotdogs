@@ -16,21 +16,23 @@
 
 <script language="javascript">
   prices = {Hotdogs: 3.25, Fries: 2.00, Drinks:1.50}; 
-  var i;
   document.write("<form method='get' name='Order'> <h2> Place Your Order </h2>");
-  for (var i in prices)
-  {
+  var i;
+  //Write Form
+  for (var i in prices){
     document.write(i + " Qty. <input type='text' placeholder='0' id='" + i + "'> <br>");
   }  
   document.write("<button type='button' onclick='GetIn();Calc();'> Order </button>");
   document.write("</form>");
 
+  //Take in Input
   function GetIn() {
     window.quantity = {Hotdogs: document.getElementById("Hotdogs").value,
                        Fries: document.getElementById("Fries").value,
                        Drinks: document.getElementById("Drinks").value};
   }
   
+  //Calculate Prices
   function Calc() {
     document.write("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = $" + window.prices.Hotdogs.toFixed(2) + 
                    " each, Hotdogs Total = $" + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "<br>");
@@ -42,6 +44,7 @@
                       parseFloat(window.quantity.Fries * window.prices.Fries) +
                       parseFloat(window.quantity.Drinks * window.prices.Drinks);
     document.write("Subtotal = $" + window.subtotal.toFixed(2) + "<br>");
+    //Apply Discount
     if (window.subtotal.toFixed(2) >= 20) {
       alert("Congratulations! Because your subtotal comes out to $20 or more you qualify for Joe's special 10% discount!");
       window.discounted = window.subtotal * .9;
@@ -51,6 +54,7 @@
       document.write("Tax = $" + (window.total - window.discounted).toFixed(2) + "<br>");
       document.write("Total = $" + window.total.toFixed(2)); 
     } 
+    //No Discount
     else {
       window.total = window.subtotal * 1.0625;
       document.write("Tax = $" + (window.total - window.subtotal).toFixed(2) + "<br>");
