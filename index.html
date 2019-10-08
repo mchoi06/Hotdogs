@@ -17,14 +17,10 @@
 <script language="javascript">
   var prices = {Hotdogs: 3.25, Fries: 2, Drinks:1.5}; 
   var quantity = new Object();
-/*  prices[Hotdogs = 3.25];
-  prices[Fries = 2];
-  prices[Drinks = 1.50];*/
   var i;
-  document.write("LOL")
   for (var i in prices)
   {
-    document.write(i + " Qty. <input type='text' placeholder='0' id='hotdogs'> <br>");
+    document.write(i + " Qty. <input type='text' placeholder='0' id='" + i + "'> <br>");
   }  
   document.write("OOF");
   document.write("<form method='get' name='Order'> <h2> Place Your Order </h2> <input type='text'><h1>Hello World!</h1></form>");
