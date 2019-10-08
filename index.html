@@ -47,13 +47,16 @@
     window.quantity = {Hotdogs: document.getElementById("Hotdogs").value,
                        Fries: document.getElementById("Fries").value,
                        Drinks: document.getElementById("Drinks").value};
-    document.write(window.quantity.Hotdogs + window.quantity.Fries + window.quantity.Drinks);
   }
   
   function Calc() {
     var subtotal = 0;
     document.write("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = " + window.prices.Hotdogs + 
-                   " each, Hotdogs Total = " + (window.quantity.Hotdogs * window.prices.Hotdogs));
+                   " each, Hotdogs Total = " + (window.quantity.Hotdogs * window.prices.Hotdogs) + "<br>");
+    document.write("Fries Qty. = " + window.quantity.Fries + ", Price = " + window.prices.Fries + 
+                   " each, Fries Total = " + (window.quantity.Fries * window.prices.Fries) + "<br>");
+    document.write("Drinks Qty. = " + window.quantity.Drinks + ", Price = " + window.prices.Drinks + 
+                   " each, Drinks Total = " + (window.quantity.Drinks * window.prices.Drinks) + "<br>");
   }
     /*
     window.hprice = document.getElementById("Hotdogs").value;
