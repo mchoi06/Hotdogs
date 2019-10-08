@@ -34,6 +34,8 @@
   
   //Calculate Prices
   function Calc() {
+    document.write("<table style='width:65%'> <tr> <th> Item </th> <th> Quantity </th> <th> Total </th> </tr>");
+    document.write("</table>");
     document.write("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = $" + window.prices.Hotdogs.toFixed(2) + 
                    " each, Hotdogs Total = $" + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "<br>");
     document.write("Fries Qty. = " + window.quantity.Fries + ", Price = $" + window.prices.Fries.toFixed(2) + 
