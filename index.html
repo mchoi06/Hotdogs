@@ -47,7 +47,9 @@
     var quantity = {Hotdogs: document.getElementById("Hotdogs").value,
                     Fries: document.getElementById("Fries").value,
                     Drinks: document.getElementById("Drinks").value};
-    document.write(quantity);
+    
+    for (var i in quantity) {
+      document.write(quantity.Hotdogs);
   }
     /*
     window.hprice = document.getElementById("Hotdogs").value;
