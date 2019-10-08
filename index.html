@@ -46,18 +46,12 @@
   function Calc() {
     document.write("<table> <tr> <th> Item </th> <th> Quantity </th> <th> Price </th> <th> Total </th> </tr>");
     document.write("<tr> <td> Hotdogs </td> <td>" + window.quantity.Hotdogs + "</td> <td> $" + window.prices.Hotdogs.toFixed(2)
-                   + "</td> <td> " + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "</td> </tr>");
+                   + "</td> <td> $" + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "</td> </tr>");
     document.write("<tr> <td> Fries </td> <td>" + window.quantity.Fries + "</td> <td> $" + window.prices.Fries.toFixed(2)
-                   + "</td> <td> " + (window.quantity.Fries * window.prices.Fries).toFixed(2) + "</td> </tr>");    
+                   + "</td> <td> $" + (window.quantity.Fries * window.prices.Fries).toFixed(2) + "</td> </tr>");    
     document.write("<tr> <td> Drinks </td> <td>" + window.quantity.Drinks + "</td> <td> $" + window.prices.Drinks.toFixed(2)
-                   + "</td> <td> " + (window.quantity.Drinks * window.prices.Drinks).toFixed(2) + "</td> </tr>");    
+                   + "</td> <td> $" + (window.quantity.Drinks * window.prices.Drinks).toFixed(2) + "</td> </tr>");    
     document.write("</table>");
-    document.write("Hotdogs Qty. = " + window.quantity.Hotdogs + ", Price = $" + window.prices.Hotdogs.toFixed(2) + 
-                   " each, Hotdogs Total = $" + (window.quantity.Hotdogs * window.prices.Hotdogs).toFixed(2) + "<br>");
-    document.write("Fries Qty. = " + window.quantity.Fries + ", Price = $" + window.prices.Fries.toFixed(2) + 
-                   " each, Fries Total = $" + (window.quantity.Fries * window.prices.Fries).toFixed(2) + "<br>");
-    document.write("Drinks Qty. = " + window.quantity.Drinks + ", Price = $" + window.prices.Drinks.toFixed(2) + 
-                   " each, Drinks Total = $" + (window.quantity.Drinks * window.prices.Drinks).toFixed(2) + "<br>");
     window.subtotal = parseFloat(window.quantity.Hotdogs * window.prices.Hotdogs) + 
                       parseFloat(window.quantity.Fries * window.prices.Fries) +
                       parseFloat(window.quantity.Drinks * window.prices.Drinks);
